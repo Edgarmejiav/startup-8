@@ -1,0 +1,84 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #005a9c;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Para que el radio de borde se aplique bien */
+}
+
+.question {
+    padding: 20px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.question:last-child {
+    border-bottom: none;
+}
+
+.question p {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    user-select: none; /* Evita que el texto se seleccione al hacer clic */
+}
+
+.options li:hover:not(.correct):not(.incorrect) {
+    background-color: #f0f0f0;
+    border-color: #007bff;
+}
+
+/* --- Clases de estado --- */
+
+/* Clase para la opción correcta seleccionada */
+.options li.correct {
+    background-color: #d4edda; /* Verde claro */
+    border-color: #155724;     /* Verde oscuro */
+    color: #155724;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Clase para la opción incorrecta seleccionada */
+.options li.incorrect {
+    background-color: #f8d7da; /* Rojo claro */
+    border-color: #721c24;     /* Rojo oscuro */
+    color: #721c24;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Clase para deshabilitar las demás opciones una vez respondido */
+.question.answered .options li:not(.correct):not(.incorrect) {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none; /* No permite más clics */
+}
