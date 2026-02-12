@@ -1,90 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listening Quiz U4</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .audio-container {
-            background-color: #f1f5f9;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        audio {
-            width: 100%;
-            max-width: 500px;
-            margin-top: 0.5rem;
-        }
-
-        .track-label {
-            display: block;
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Speech Recognition Styles */
-        .speech-container {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #fff;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .speech-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .speech-btn:hover {
-            background-color: var(--primary-dark);
-        }
-
-        .speech-btn.recording {
-            background-color: #ef4444; /* Red for recording */
-            animation: pulse 1.5s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
-        }
-
-        .transcription-box {
-            margin-top: 1rem;
-            padding: 1rem;
-            background-color: #f8fafc;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            min-height: 60px;
-            text-align: left;
-            font-family: monospace;
-            color: var(--text-primary);
-        }
-
-        .status-text {
-            margin-top: 0.5rem;
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-    </style>
 </head>
+
 <body>
     <div class="nav-buttons">
         <a href="../index.html" class="btn-home">
@@ -93,110 +16,112 @@
     </div>
     <h1>🎧 LISTENING: Unit 4 Review</h1>
 
-<div class="quiz-container">
+    <div class="quiz-container">
 
-    <h2>Part 1: Podcast</h2>
+        <h2>Part 1: Podcast</h2>
 
-    <div class="audio-container">
-        <span class="track-label">Audio Track: StartUp8_Unit04_Test_01</span>
-        <audio controls>
-            <source src="../audio/StartUp8 Unit04 Test 01.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="question" id="q1">
-        <p>1. What is the podcast about?</p>
-        <ul class="options">
-            <li>a. how gentrification makes street art disappear</li>
-            <li data-correct="true">b. the relationship between street art and gentrification in cities</li>
-            <li>c. the use of street art to gentrify a neighborhood</li>
-            <li>d. how cities are changing neighborhoods to accommodate the middle-class</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q2">
-        <p>2. What is one of the main consequences of gentrification?</p>
-        <ul class="options">
-            <li>a. higher income residents move into a lower income neighborhood</li>
-            <li data-correct="true">b. the original residents end up moving to a less expensive neighborhood</li>
-            <li>c. graffiti is used to decorate old abandoned buildings.</li>
-            <li>d. the amount of tourists to a neighborhood increases.</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q3">
-        <p>3. How was street art used in Wynwood, Miami?</p>
-        <ul class="options">
-            <li data-correct="true">a. as a stimulus for the gentrification of a low income neighborhood</li>
-            <li>b. as decoration for new Art galleries, bars, and boutiques</li>
-            <li>c. as a way to control the levels of crime in a dangerous neighborhood</li>
-            <li>d. as inspiration for the original residents to make the neighborhood safer</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q4">
-        <p>4. Which signal phrase is used in the conclusion of the podcast to show restatement?</p>
-        <ul class="options">
-            <li>a. Generally speaking</li>
-            <li>b. All things considered</li>
-            <li>c. Ultimately</li>
-            <li data-correct="true">d. We’ve seen that</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <h2>Part 2: Pronunciation</h2>
-    <p class="instruction">Listen to the sentences and mark the stressed word in the underlined phrase.</p>
-
-    <div class="audio-container">
-        <span class="track-label">Audio Track: StartUp8_Unit04_Test_02</span>
-        <audio controls>
-            <source src="../audio/StartUp8 Unit04 Test 02.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="question" id="q5">
-        <p>5. He’s only here to show off.</p>
-        <ul class="options">
-            <li data-correct="true">a. off</li>
-            <li>b. show</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q6">
-        <p>6. Can you turn the music down a little?</p>
-        <ul class="options">
-            <li data-correct="true">a. down</li>
-            <li>b. turn</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <h2>Part 3: Speaking Practice</h2>
-    <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences above.</p>
-
-    <div class="speech-container">
-        <button id="recordBtn" class="speech-btn">
-            <span>🎤</span> Start Recording
-        </button>
-        <p id="status" class="status-text">Click to start speaking...</p>
-        <div id="transcription" class="transcription-box">
-            Your text will appear here...
+        <div class="audio-container">
+            <span class="track-label">Audio Track: StartUp8_Unit04_Test_01</span>
+            <audio controls>
+                <source src="../audio/StartUp8 Unit04 Test 01.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
+
+        <div class="question" id="q1">
+            <p>1. What is the podcast about?</p>
+            <ul class="options">
+                <li>a. how gentrification makes street art disappear</li>
+                <li data-correct="true">b. the relationship between street art and gentrification in cities</li>
+                <li>c. the use of street art to gentrify a neighborhood</li>
+                <li>d. how cities are changing neighborhoods to accommodate the middle-class</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q2">
+            <p>2. What is one of the main consequences of gentrification?</p>
+            <ul class="options">
+                <li>a. higher income residents move into a lower income neighborhood</li>
+                <li data-correct="true">b. the original residents end up moving to a less expensive neighborhood</li>
+                <li>c. graffiti is used to decorate old abandoned buildings.</li>
+                <li>d. the amount of tourists to a neighborhood increases.</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q3">
+            <p>3. How was street art used in Wynwood, Miami?</p>
+            <ul class="options">
+                <li data-correct="true">a. as a stimulus for the gentrification of a low income neighborhood</li>
+                <li>b. as decoration for new Art galleries, bars, and boutiques</li>
+                <li>c. as a way to control the levels of crime in a dangerous neighborhood</li>
+                <li>d. as inspiration for the original residents to make the neighborhood safer</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q4">
+            <p>4. Which signal phrase is used in the conclusion of the podcast to show restatement?</p>
+            <ul class="options">
+                <li>a. Generally speaking</li>
+                <li>b. All things considered</li>
+                <li>c. Ultimately</li>
+                <li data-correct="true">d. We’ve seen that</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Part 2: Pronunciation</h2>
+        <p class="instruction">Listen to the sentences and mark the stressed word in the underlined phrase.</p>
+
+        <div class="audio-container">
+            <span class="track-label">Audio Track: StartUp8_Unit04_Test_02</span>
+            <audio controls>
+                <source src="../audio/StartUp8 Unit04 Test 02.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="question" id="q5">
+            <p>5. He’s only here to show off.</p>
+            <ul class="options">
+                <li data-correct="true">a. off</li>
+                <li>b. show</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q6">
+            <p>6. Can you turn the music down a little?</p>
+            <ul class="options">
+                <li data-correct="true">a. down</li>
+                <li>b. turn</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Part 3: Speaking Practice</h2>
+        <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences above.</p>
+
+        <div class="speech-container">
+            <button id="recordBtn" class="speech-btn">
+                <span>🎤</span> Start Recording
+            </button>
+            <p id="status" class="status-text">Click to start speaking...</p>
+            <div id="transcription" class="transcription-box">
+                Your text will appear here...
+            </div>
+        </div>
+
     </div>
 
-
-    <div id="result-container" class="result-container" style="display: none; margin-top: 2rem; text-align: center; padding: 1rem; background-color: #e2e8f0; border-radius: 8px;">
+    <div id="result-container" class="result-container"
+        style="display: none; margin-top: 2rem; text-align: center; padding: 1rem; background-color: #e2e8f0; border-radius: 8px;">
         <h2>Quiz Complete!</h2>
         <p id="score-text" style="font-size: 1.2rem; font-weight: bold;"></p>
     </div>
-</div>
 
-<script src="../script.js"></script>
-<script src="../speech.js"></script>
+    <script src="../script.js"></script>
+    <script src="../speech.js"></script>
 </body>
+
 </html>
