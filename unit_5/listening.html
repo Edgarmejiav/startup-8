@@ -1,90 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listening Quiz U5</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .audio-container {
-            background-color: #313131;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        audio {
-            width: 100%;
-            max-width: 500px;
-            margin-top: 0.5rem;
-        }
-
-        .track-label {
-            display: block;
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Speech Recognition Styles */
-        .speech-container {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #1E1E1E;
-            border: 1px solid #303030;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .speech-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .speech-btn:hover {
-            background-color: var(--primary-dark);
-        }
-
-        .speech-btn.recording {
-            background-color: #ef4444; /* Red for recording */
-            animation: pulse 1.5s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
-        }
-
-        .transcription-box {
-            margin-top: 1rem;
-            padding: 1rem;
-            background-color: #1c1c1c;
-            border: 1px solid #303030;
-            border-radius: 8px;
-            min-height: 60px;
-            text-align: left;
-            font-family: monospace;
-            color: var(--text-primary);
-        }
-
-        .status-text {
-            margin-top: 0.5rem;
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-    </style>
 </head>
+
 <body>
     <div class="nav-buttons">
         <a href="../index.html" class="btn-home">
@@ -93,110 +16,126 @@
     </div>
     <h1>🎧 LISTENING: Unit 5 Review</h1>
 
-<div class="quiz-container">
+    <div class="quiz-container">
 
-    <h2>Part 1: Podcast</h2>
+        <h2>Part 1: Podcast</h2>
 
-    <div class="audio-container">
-        <span class="track-label">Audio Track: StartUp8_Unit05_Test_01</span>
-        <audio controls>
-            <source src="../audio/StartUp8 Unit05 Test 01.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="question" id="q1">
-        <p>1. What’s the podcast about?</p>
-        <ul class="options">
-            <li>a. Direct versus indirect communication styles and how you should master both.</li>
-            <li>b. High-context and low-context cultures and what this means.</li>
-            <li>c. Differences in communication between individualistic and collectivistic cultures.</li>
-            <li data-correct="true">d. How to categorize different cultures so we can communicate better across cultures.</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q2">
-        <p>2. What is a key difference between indirect communication and direct communication?</p>
-        <ul class="options">
-            <li>a. In an indirect communication style speakers tend to have more communication breakdowns since they don’t share all their thoughts, while in a direct communication style these communication breakdowns are minimized.</li>
-            <li data-correct="true">b. In an indirect communication style the speakers don’t need to explain certain things since they are common knowledge, while a direct communication style specifies each piece of information.</li>
-            <li>c. In an indirect communication style the speakers don’t really express how they feel, while in a direct communication style people tend to focus on sharing their negative emotions.</li>
-            <li>d. In an indirect communication style people speak to help other achieve a common goal, while in a direct communication style people don’t pay attention to common goals.</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q3">
-        <p>3. What is a key difference between a low-context culture and a high-context culture in communication?</p>
-        <ul class="options">
-            <li>a. Low-context cultures rely on the surrounding environment and shared background knowledge when expressing messages.</li>
-            <li>b. Low-context cultures prioritize the needs of the whole group.</li>
-            <li data-correct="true">c. Low-context cultures don’t have a lot of shared context, so a lot of focus is put on the actual words being said.</li>
-            <li>d. Low-context cultures are linked to individualistic cultures.</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q4">
-        <p>4. What is an example of a breakdown between an indirect and a direct communicator?</p>
-        <ul class="options">
-            <li>a. The indirect communicator may give too many details to explain his or her position, while the direct communicator doesn’t communicate using so much explanation.</li>
-            <li>b. The indirect communicator may not consider the direct communicator’s feelings enough.</li>
-            <li>c. The indirect and direct communicators may argue with each other if they have different opinions.</li>
-            <li data-correct="true">d. An indirect communicator may not give enough details, assuming the direct communicator already knows the background of the situation.</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <h2>Part 2: Pronunciation</h2>
-    <p class="instruction">Listen to the question and mark the two words that are compared or contrasted.</p>
-
-    <div class="audio-container">
-        <span class="track-label">Audio Track: StartUp8_Unit05_Test_02</span>
-        <audio controls>
-            <source src="../audio/StartUp8 Unit05 Test 02.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="question" id="q5">
-        <p>5. Should I talk to her today or tomorrow?</p>
-        <ul class="options">
-            <li data-correct="true">a. today / tomorrow</li>
-            <li>b. talk / her</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q6">
-        <p>6. It’s okay to be sad, not everyone feels happy all the time.</p>
-        <ul class="options">
-            <li data-correct="true">a. sad / happy</li>
-            <li>b. okay / everyone</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <h2>Part 3: Speaking Practice</h2>
-    <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences above.</p>
-
-    <div class="speech-container">
-        <button id="recordBtn" class="speech-btn">
-            <span>🎤</span> Start Recording
-        </button>
-        <p id="status" class="status-text">Click to start speaking...</p>
-        <div id="transcription" class="transcription-box">
-            Your text will appear here...
+        <div class="audio-container">
+            <span class="track-label">Audio Track: StartUp8_Unit05_Test_01</span>
+            <audio controls>
+                <source src="../audio/StartUp8 Unit05 Test 01.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
+
+        <div class="question" id="q1">
+            <p>1. What’s the podcast about?</p>
+            <ul class="options">
+                <li>a. Direct versus indirect communication styles and how you should master both.</li>
+                <li>b. High-context and low-context cultures and what this means.</li>
+                <li>c. Differences in communication between individualistic and collectivistic cultures.</li>
+                <li data-correct="true">d. How to categorize different cultures so we can communicate better across
+                    cultures.</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q2">
+            <p>2. What is a key difference between indirect communication and direct communication?</p>
+            <ul class="options">
+                <li>a. In an indirect communication style speakers tend to have more communication breakdowns since they
+                    don’t share all their thoughts, while in a direct communication style these communication breakdowns
+                    are minimized.</li>
+                <li data-correct="true">b. In an indirect communication style the speakers don’t need to explain certain
+                    things since they are common knowledge, while a direct communication style specifies each piece of
+                    information.</li>
+                <li>c. In an indirect communication style the speakers don’t really express how they feel, while in a
+                    direct communication style people tend to focus on sharing their negative emotions.</li>
+                <li>d. In an indirect communication style people speak to help other achieve a common goal, while in a
+                    direct communication style people don’t pay attention to common goals.</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q3">
+            <p>3. What is a key difference between a low-context culture and a high-context culture in communication?
+            </p>
+            <ul class="options">
+                <li>a. Low-context cultures rely on the surrounding environment and shared background knowledge when
+                    expressing messages.</li>
+                <li>b. Low-context cultures prioritize the needs of the whole group.</li>
+                <li data-correct="true">c. Low-context cultures don’t have a lot of shared context, so a lot of focus is
+                    put on the actual words being said.</li>
+                <li>d. Low-context cultures are linked to individualistic cultures.</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q4">
+            <p>4. What is an example of a breakdown between an indirect and a direct communicator?</p>
+            <ul class="options">
+                <li>a. The indirect communicator may give too many details to explain his or her position, while the
+                    direct communicator doesn’t communicate using so much explanation.</li>
+                <li>b. The indirect communicator may not consider the direct communicator’s feelings enough.</li>
+                <li>c. The indirect and direct communicators may argue with each other if they have different opinions.
+                </li>
+                <li data-correct="true">d. An indirect communicator may not give enough details, assuming the direct
+                    communicator already knows the background of the situation.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Part 2: Pronunciation</h2>
+        <p class="instruction">Listen to the question and mark the two words that are compared or contrasted.</p>
+
+        <div class="audio-container">
+            <span class="track-label">Audio Track: StartUp8_Unit05_Test_02</span>
+            <audio controls>
+                <source src="../audio/StartUp8 Unit05 Test 02.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="question" id="q5">
+            <p>5. Should I talk to her today or tomorrow?</p>
+            <ul class="options">
+                <li data-correct="true">a. today / tomorrow</li>
+                <li>b. talk / her</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q6">
+            <p>6. It’s okay to be sad, not everyone feels happy all the time.</p>
+            <ul class="options">
+                <li data-correct="true">a. sad / happy</li>
+                <li>b. okay / everyone</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Part 3: Speaking Practice</h2>
+        <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences
+            above.</p>
+
+        <div class="speech-container">
+            <button id="recordBtn" class="speech-btn">
+                <span>🎤</span> Start Recording
+            </button>
+            <p id="status" class="status-text">Click to start speaking...</p>
+            <div id="transcription" class="transcription-box">
+                Your text will appear here...
+            </div>
+        </div>
+
     </div>
 
-
-    <div id="result-container" class="result-container" style="display: none; margin-top: 2rem; text-align: center; padding: 1rem; background-color: #e2e8f0; border-radius: 8px;">
+    <div id="result-container" class="result-container"
+        style="display: none; margin-top: 2rem; text-align: center; padding: 1rem; background-color: #e2e8f0; border-radius: 8px;">
         <h2>Quiz Complete!</h2>
         <p id="score-text" style="font-size: 1.2rem; font-weight: bold;"></p>
     </div>
-</div>
 
-<script src="../script.js"></script>
-<script src="../speech.js"></script>
+    <script src="../script.js"></script>
+    <script src="../speech.js"></script>
 </body>
+
 </html>

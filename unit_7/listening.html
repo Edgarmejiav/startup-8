@@ -1,90 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listening Quiz U7</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .audio-container {
-            background-color: #313131;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        audio {
-            width: 100%;
-            max-width: 500px;
-            margin-top: 0.5rem;
-        }
-
-        .track-label {
-            display: block;
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Speech Recognition Styles */
-        .speech-container {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #1E1E1E;
-            border: 1px solid #303030;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .speech-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .speech-btn:hover {
-            background-color: var(--primary-dark);
-        }
-
-        .speech-btn.recording {
-            background-color: #ef4444; /* Red for recording */
-            animation: pulse 1.5s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
-        }
-
-        .transcription-box {
-            margin-top: 1rem;
-            padding: 1rem;
-            background-color: #1c1c1c;
-            border: 1px solid #303030;
-            border-radius: 8px;
-            min-height: 60px;
-            text-align: left;
-            font-family: monospace;
-            color: var(--text-primary);
-        }
-
-        .status-text {
-            margin-top: 0.5rem;
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-    </style>
 </head>
+
 <body>
     <div class="nav-buttons">
         <a href="../index.html" class="btn-home">
@@ -93,117 +16,122 @@
     </div>
     <h1>🎧 LISTENING: Unit 7 Review</h1>
 
-<div class="quiz-container">
+    <div class="quiz-container">
 
-    <h2>Part 1: Podcast</h2>
+        <h2>Part 1: Podcast</h2>
 
-    <div class="audio-container">
-        <span class="track-label">Audio Track: StartUp8_Unit07_Test_01</span>
-        <audio controls>
-            <source src="../audio/StartUp8 Unit07 Test 01.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="question" id="q1">
-        <p>1. What is the topic of the podcast?</p>
-        <ul class="options">
-            <li data-correct="true">a. romantic partners who suddenly break all contact with the people they are dating</li>
-            <li>b. the best way to break up with your partner</li>
-            <li>c. the role of dating apps in modern relationships</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q2">
-        <p>2. Which word is stressed in the question “... you’re always the ghoster, aren’t you?”</p>
-        <ul class="options">
-            <li>a. always</li>
-            <li data-correct="true">b. ghoster</li>
-            <li>c. you</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q3">
-        <p>3. Which of the speakers is a “ghoster”?</p>
-        <ul class="options">
-            <li>a. Carlie</li>
-            <li>b. Marvin</li>
-            <li data-correct="true">c. Jamie</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q4">
-        <p>4. Listen again. Which word is stressed in the sentence “Next on the line is someone who is familiar with the other side of ghosting.”</p>
-        <ul class="options">
-            <li>a. line</li>
-            <li>b. someone</li>
-            <li data-correct="true">c. other</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <h2>Part 2: Pronunciation</h2>
-    <p class="instruction">Listen. Choose the word that is emphasized.</p>
-
-    <div class="audio-container">
-        <span class="track-label">Audio Track: StartUp8_Unit07_Test_02</span>
-        <audio controls>
-            <source src="../audio/StartUp8 Unit07 Test 02.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="question" id="q5">
-        <p>5. This time, we will win the game.</p>
-        <ul class="options">
-            <li>a. This</li>
-            <li>b. time</li>
-            <li>c. we</li>
-            <li data-correct="true">d. will</li>
-            <li>e. win</li>
-            <li>f. the</li>
-            <li>g. game</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q6">
-        <p>6. I said Tony made a mistake, not you.</p>
-        <ul class="options">
-            <li>a. I</li>
-            <li>b. said</li>
-            <li data-correct="true">c. Tony</li>
-            <li>d. made</li>
-            <li>e. a</li>
-            <li>f. mistake</li>
-            <li>g. not</li>
-            <li>h. you</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <h2>Part 3: Speaking Practice</h2>
-    <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences above.</p>
-
-    <div class="speech-container">
-        <button id="recordBtn" class="speech-btn">
-            <span>🎤</span> Start Recording
-        </button>
-        <p id="status" class="status-text">Click to start speaking...</p>
-        <div id="transcription" class="transcription-box">
-            Your text will appear here...
+        <div class="audio-container">
+            <span class="track-label">Audio Track: StartUp8_Unit07_Test_01</span>
+            <audio controls>
+                <source src="../audio/StartUp8 Unit07 Test 01.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
+
+        <div class="question" id="q1">
+            <p>1. What is the topic of the podcast?</p>
+            <ul class="options">
+                <li data-correct="true">a. romantic partners who suddenly break all contact with the people they are
+                    dating</li>
+                <li>b. the best way to break up with your partner</li>
+                <li>c. the role of dating apps in modern relationships</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q2">
+            <p>2. Which word is stressed in the question “... you’re always the ghoster, aren’t you?”</p>
+            <ul class="options">
+                <li>a. always</li>
+                <li data-correct="true">b. ghoster</li>
+                <li>c. you</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q3">
+            <p>3. Which of the speakers is a “ghoster”?</p>
+            <ul class="options">
+                <li>a. Carlie</li>
+                <li>b. Marvin</li>
+                <li data-correct="true">c. Jamie</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q4">
+            <p>4. Listen again. Which word is stressed in the sentence “Next on the line is someone who is familiar with
+                the other side of ghosting.”</p>
+            <ul class="options">
+                <li>a. line</li>
+                <li>b. someone</li>
+                <li data-correct="true">c. other</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Part 2: Pronunciation</h2>
+        <p class="instruction">Listen. Choose the word that is emphasized.</p>
+
+        <div class="audio-container">
+            <span class="track-label">Audio Track: StartUp8_Unit07_Test_02</span>
+            <audio controls>
+                <source src="../audio/StartUp8 Unit07 Test 02.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="question" id="q5">
+            <p>5. This time, we will win the game.</p>
+            <ul class="options">
+                <li>a. This</li>
+                <li>b. time</li>
+                <li>c. we</li>
+                <li data-correct="true">d. will</li>
+                <li>e. win</li>
+                <li>f. the</li>
+                <li>g. game</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q6">
+            <p>6. I said Tony made a mistake, not you.</p>
+            <ul class="options">
+                <li>a. I</li>
+                <li>b. said</li>
+                <li data-correct="true">c. Tony</li>
+                <li>d. made</li>
+                <li>e. a</li>
+                <li>f. mistake</li>
+                <li>g. not</li>
+                <li>h. you</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Part 3: Speaking Practice</h2>
+        <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences
+            above.</p>
+
+        <div class="speech-container">
+            <button id="recordBtn" class="speech-btn">
+                <span>🎤</span> Start Recording
+            </button>
+            <p id="status" class="status-text">Click to start speaking...</p>
+            <div id="transcription" class="transcription-box">
+                Your text will appear here...
+            </div>
+        </div>
+
     </div>
 
-
-    <div id="result-container" class="result-container" style="display: none; margin-top: 2rem; text-align: center; padding: 1rem; background-color: #e2e8f0; border-radius: 8px;">
+    <div id="result-container" class="result-container"
+        style="display: none; margin-top: 2rem; text-align: center; padding: 1rem; background-color: #e2e8f0; border-radius: 8px;">
         <h2>Quiz Complete!</h2>
         <p id="score-text" style="font-size: 1.2rem; font-weight: bold;"></p>
     </div>
-</div>
 
-<script src="../script.js"></script>
-<script src="../speech.js"></script>
+    <script src="../script.js"></script>
+    <script src="../speech.js"></script>
 </body>
+
 </html>

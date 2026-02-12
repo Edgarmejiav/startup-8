@@ -1,90 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listening Quiz U6</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .audio-container {
-            background-color: #313131;
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        audio {
-            width: 100%;
-            max-width: 500px;
-            margin-top: 0.5rem;
-        }
-
-        .track-label {
-            display: block;
-            font-weight: 600;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Speech Recognition Styles */
-        .speech-container {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #1E1E1E;
-            border: 1px solid #303030;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .speech-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .speech-btn:hover {
-            background-color: var(--primary-dark);
-        }
-
-        .speech-btn.recording {
-            background-color: #ef4444; /* Red for recording */
-            animation: pulse 1.5s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
-        }
-
-        .transcription-box {
-            margin-top: 1rem;
-            padding: 1rem;
-            background-color: #1c1c1c;
-            border: 1px solid #303030;
-            border-radius: 8px;
-            min-height: 60px;
-            text-align: left;
-            font-family: monospace;
-            color: var(--text-primary);
-        }
-
-        .status-text {
-            margin-top: 0.5rem;
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-    </style>
 </head>
+
 <body>
     <div class="nav-buttons">
         <a href="../index.html" class="btn-home">
@@ -93,110 +16,116 @@
     </div>
     <h1>🎧 LISTENING: Unit 6 Review</h1>
 
-<div class="quiz-container">
+    <div class="quiz-container">
 
-    <h2>Part 1: Podcast</h2>
+        <h2>Part 1: Podcast</h2>
 
-    <div class="audio-container">
-        <span class="track-label">Audio Track: StartUp8_Unit06_Test_01</span>
-        <audio controls>
-            <source src="../audio/StartUp8 Unit06 Test 01.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="question" id="q1">
-        <p>1. What is the purpose of the podcast?</p>
-        <ul class="options">
-            <li data-correct="true">a. to describe different types of corruption</li>
-            <li>b. to describe the harmful effects of nepotism</li>
-            <li>c. to discuss the importance of ethics in business</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q2">
-        <p>2. What argument does Ravi make about nepotism?</p>
-        <ul class="options">
-            <li>a. It can cause harm to a business.</li>
-            <li>b. It’s standard practice.</li>
-            <li data-correct="true">c. There’s nothing wrong with it.</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q3">
-        <p>3. What argument does Mila make about defining political corruption?</p>
-        <ul class="options">
-            <li>a. It’s important to be clear about different types of corruption.</li>
-            <li>b. The term “political corruption” should be limited to serious instances with serious consequences.</li>
-            <li data-correct="true">c. All corruption is harmful, and we shouldn’t put so much focus on labelling the type of corruption.</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q4">
-        <p>4. What is systemic corruption, according to Mila?</p>
-        <ul class="options">
-            <li>a. when high-level leaders act in their own self-interest in a way that is harmful</li>
-            <li data-correct="true">b. when an organization is corrupt, and taking part in corrupt behavior is the norm</li>
-            <li>c. when corruption is harmful to society, democracy, and other institutions</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <h2>Part 2: Pronunciation</h2>
-    <p class="instruction">Listen to the words.</p>
-
-    <div class="audio-container">
-        <span class="track-label">Audio Track: StartUp8_Unit06_Test_02</span>
-        <audio controls>
-            <source src="../audio/StartUp8 Unit06 Test 02.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="question" id="q5">
-        <p>5. Choose the word that has a dropped middle vowel.</p>
-        <ul class="options">
-            <li data-correct="true">a. comfortable</li>
-            <li>b. argument</li>
-            <li>c. democracy</li>
-            <li>d. corruption</li>
-        </ul>
-    </div>
-
-    <div class="question" id="q6">
-        <p>6. Choose the word that has a dropped vowel sound.</p>
-        <ul class="options">
-            <li>a. diversity</li>
-            <li>b. popular</li>
-            <li data-correct="true">c. vegetable</li>
-            <li>d. develop</li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <h2>Part 3: Speaking Practice</h2>
-    <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences above.</p>
-
-    <div class="speech-container">
-        <button id="recordBtn" class="speech-btn">
-            <span>🎤</span> Start Recording
-        </button>
-        <p id="status" class="status-text">Click to start speaking...</p>
-        <div id="transcription" class="transcription-box">
-            Your text will appear here...
+        <div class="audio-container">
+            <span class="track-label">Audio Track: StartUp8_Unit06_Test_01</span>
+            <audio controls>
+                <source src="../audio/StartUp8 Unit06 Test 01.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
+
+        <div class="question" id="q1">
+            <p>1. What is the purpose of the podcast?</p>
+            <ul class="options">
+                <li data-correct="true">a. to describe different types of corruption</li>
+                <li>b. to describe the harmful effects of nepotism</li>
+                <li>c. to discuss the importance of ethics in business</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q2">
+            <p>2. What argument does Ravi make about nepotism?</p>
+            <ul class="options">
+                <li>a. It can cause harm to a business.</li>
+                <li>b. It’s standard practice.</li>
+                <li data-correct="true">c. There’s nothing wrong with it.</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q3">
+            <p>3. What argument does Mila make about defining political corruption?</p>
+            <ul class="options">
+                <li>a. It’s important to be clear about different types of corruption.</li>
+                <li>b. The term “political corruption” should be limited to serious instances with serious consequences.
+                </li>
+                <li data-correct="true">c. All corruption is harmful, and we shouldn’t put so much focus on labelling
+                    the type of corruption.</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q4">
+            <p>4. What is systemic corruption, according to Mila?</p>
+            <ul class="options">
+                <li>a. when high-level leaders act in their own self-interest in a way that is harmful</li>
+                <li data-correct="true">b. when an organization is corrupt, and taking part in corrupt behavior is the
+                    norm</li>
+                <li>c. when corruption is harmful to society, democracy, and other institutions</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Part 2: Pronunciation</h2>
+        <p class="instruction">Listen to the words.</p>
+
+        <div class="audio-container">
+            <span class="track-label">Audio Track: StartUp8_Unit06_Test_02</span>
+            <audio controls>
+                <source src="../audio/StartUp8 Unit06 Test 02.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="question" id="q5">
+            <p>5. Choose the word that has a dropped middle vowel.</p>
+            <ul class="options">
+                <li data-correct="true">a. comfortable</li>
+                <li>b. argument</li>
+                <li>c. democracy</li>
+                <li>d. corruption</li>
+            </ul>
+        </div>
+
+        <div class="question" id="q6">
+            <p>6. Choose the word that has a dropped vowel sound.</p>
+            <ul class="options">
+                <li>a. diversity</li>
+                <li>b. popular</li>
+                <li data-correct="true">c. vegetable</li>
+                <li>d. develop</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Part 3: Speaking Practice</h2>
+        <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences
+            above.</p>
+
+        <div class="speech-container">
+            <button id="recordBtn" class="speech-btn">
+                <span>🎤</span> Start Recording
+            </button>
+            <p id="status" class="status-text">Click to start speaking...</p>
+            <div id="transcription" class="transcription-box">
+                Your text will appear here...
+            </div>
+        </div>
+
     </div>
 
-
-    <div id="result-container" class="result-container" style="display: none; margin-top: 2rem; text-align: center; padding: 1rem; background-color: #e2e8f0; border-radius: 8px;">
+    <div id="result-container" class="result-container"
+        style="display: none; margin-top: 2rem; text-align: center; padding: 1rem; background-color: #e2e8f0; border-radius: 8px;">
         <h2>Quiz Complete!</h2>
         <p id="score-text" style="font-size: 1.2rem; font-weight: bold;"></p>
     </div>
-</div>
 
-<script src="../script.js"></script>
-<script src="../speech.js"></script>
+    <script src="../script.js"></script>
+    <script src="../speech.js"></script>
 </body>
+
 </html>

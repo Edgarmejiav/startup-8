@@ -358,6 +358,105 @@ footer {
     font-size: 0.875rem;
 }
 
+/* Audio Container */
+.audio-container {
+    background-color: var(--primary-light);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.track-label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0.5rem;
+    filter: invert(0.9) hue-rotate(180deg); /* Simple dark mode filter for default player */
+}
+
+/* Speech Recognition Styles */
+.speech-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.speech-btn {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-md);
+}
+
+.speech-btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.speech-btn:disabled {
+    background-color: var(--primary-light);
+    color: var(--text-muted);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.speech-btn.recording {
+    background-color: var(--error-text);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(240, 68, 56, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(240, 68, 56, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(240, 68, 56, 0); }
+}
+
+.transcription-box {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--primary-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    min-height: 80px;
+    text-align: left;
+    font-family: 'Inter', monospace; /* Keeping consistent font */
+    color: var(--text-main);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.status-text {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
