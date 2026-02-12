@@ -26,6 +26,63 @@
             color: var(--text-secondary);
             margin-bottom: 0.5rem;
         }
+
+        /* Speech Recognition Styles */
+        .speech-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .speech-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .speech-btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .speech-btn.recording {
+            background-color: #ef4444; /* Red for recording */
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        .transcription-box {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            min-height: 60px;
+            text-align: left;
+            font-family: monospace;
+            color: var(--text-primary);
+        }
+
+        .status-text {
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
     </style>
 </head>
 <body>
@@ -37,7 +94,7 @@
 
     <div class="audio-container">
         <span class="track-label">Audio Track: StartUp8_Unit02_Test_01</span>
-        <audio controls>
+        <audio id="audio-1" controls>
             <source src="../audio/StartUp8 Unit02 Test 01.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -90,7 +147,7 @@
 
     <div class="audio-container">
         <span class="track-label">Audio Track: StartUp8_Unit02_Test_02</span>
-        <audio controls>
+        <audio id="audio-2" controls>
             <source src="../audio/StartUp8 Unit02 Test 02.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -112,8 +169,24 @@
         </ul>
     </div>
 
+    <hr>
+
+    <h2>Part 3: Speaking Practice</h2>
+    <p class="instruction">Practice your pronunciation. Click the microphone button and read one of the sentences above.</p>
+
+    <div class="speech-container">
+        <button id="recordBtn" class="speech-btn">
+            <span>🎤</span> Start Recording
+        </button>
+        <p id="status" class="status-text">Click to start speaking...</p>
+        <div id="transcription" class="transcription-box">
+            Your text will appear here...
+        </div>
+    </div>
+
 </div>
 
 <script src="../script.js"></script>
+<script src="../speech.js"></script>
 </body>
 </html>
