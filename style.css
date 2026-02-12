@@ -5,6 +5,9 @@
     --secondary-color: #10b981;
     --secondary-light: #ecfdf5;
     --secondary-dark: #047857;
+    --accent-color: #f59e0b;
+    --accent-light: #fffbeb;
+    --accent-dark: #b45309;
     --background-color: #f8fafc;
     --card-background: #ffffff;
     --text-primary: #1e293b;
@@ -257,6 +260,16 @@ h2 {
 
 .btn-vocab:hover {
     background-color: #d1fae5;
+    transform: scale(1.02);
+}
+
+.btn-listening {
+    background-color: var(--accent-light);
+    color: var(--accent-dark);
+}
+
+.btn-listening:hover {
+    background-color: #fef3c7;
     transform: scale(1.02);
 }
 

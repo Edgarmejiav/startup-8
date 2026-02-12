@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening Quiz U1</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .audio-container {
+            background-color: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 0.5rem;
+        }
+
+        .track-label {
+            display: block;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<h1>🎧 LISTENING: Unit 1 Review</h1>
+
+<div class="quiz-container">
+
+    <h2>Part 1: Podcast</h2>
+
+    <div class="audio-container">
+        <span class="track-label">Audio Track: StartUp8_Unit01_Test_01</span>
+        <audio id="audio-1" controls>
+            <source src="../audio/StartUp8 Unit01 Test 01.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="question" id="q1">
+        <p>1. What is the podcast about?</p>
+        <ul class="options">
+            <li data-correct="true">a. the dangers of doing 30-day fitness challenges</li>
+            <li>b. how to succeed in 30-day fitness challenges</li>
+            <li>c. how to train efficiently during 30-day fitness challenges</li>
+            <li>d. how 30-day fitness challenges are bad for your self-esteem</li>
+        </ul>
+    </div>
+
+    <div class="question" id="q2">
+        <p>2. Why does the host mention challenges that focus on squats or crunches?</p>
+        <ul class="options">
+            <li>a. to encourage the listeners to do these challenges</li>
+            <li>b. to name two challenges that only professional athletes do</li>
+            <li data-correct="true">c. to give specific examples of types of challenges that can cause injuries</li>
+            <li>d. to explain why these challenges can be achieved in just 30 days</li>
+        </ul>
+    </div>
+
+    <div class="question" id="q3">
+        <p>3. What is one of the drawbacks of 30-day fitness challenges?</p>
+        <ul class="options">
+            <li>a. They are less efficient than running challenges.</li>
+            <li data-correct="true">b. They don’t offer enough time to see big changes and this can damage your self-esteem.</li>
+            <li>c. They don’t help you to create a challenging fitness routine.</li>
+            <li>d. They are too long for people who don’t like to exercise.</li>
+        </ul>
+    </div>
+
+    <div class="question" id="q4">
+        <p>4. What is the purpose of this rhetorical question? “How can you approach a fitness challenge?”</p>
+        <ul class="options">
+            <li>a. to elicit answers from the listeners</li>
+            <li>b. to emphasize a specific point made earlier in the podcast</li>
+            <li>c. to give an example of a question every person should ask to his or her trainer</li>
+            <li data-correct="true">d. to introduce effective tips to follow during a fitness challenge</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h2>Part 2: Pronunciation</h2>
+    <p class="instruction">Decide if the intonation falls or rises at the end of the question.</p>
+
+    <div class="audio-container">
+        <span class="track-label">Audio Track: StartUp8_Unit01_Test_02</span>
+        <audio id="audio-2" controls>
+            <source src="../audio/StartUp8 Unit01 Test 02.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="question" id="q5">
+        <p>5. Do you want me to pick you up? I can be there in 5 minutes.</p>
+        <ul class="options">
+            <li data-correct="true">a. rises</li>
+            <li>b. falls</li>
+        </ul>
+    </div>
+
+    <div class="question" id="q6">
+        <p>6. Ask yourself this question: Do you want to give up now?</p>
+        <ul class="options">
+            <li>a. rises</li>
+            <li data-correct="true">b. falls</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
